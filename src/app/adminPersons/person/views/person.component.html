@@ -1,0 +1,9 @@
+<h1>
+    {{Title}}
+</h1>
+<button (click)='CargarDatos()' type="button">Cargar datos</button>
+<ul>
+    <li *ngFor="let item of lista">
+        {{ item.Id }} | {{ item.Nombres }}  {{item.Apellidos}} 
+    </li>
+</ul>
